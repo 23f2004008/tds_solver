@@ -8,7 +8,7 @@
   ],
   "routes": [
     {
-      "src": "/api",  // Removed the trailing slash
+      "src": "/api", 
       "methods": ["POST"],
       "dest": "app.py"
     },
