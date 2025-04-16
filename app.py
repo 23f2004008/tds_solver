@@ -2678,7 +2678,7 @@ def process_question(question: str, file_path: Optional[str] = None) -> str:
         logger.error(f"Error processing question: {str(e)}")
         return f"Error: {str(e)}"
 
-@app.route("/api/", methods=["POST"])
+@app.route("/api", methods=["POST"])
 def solve_question():
     try:
         question = request.form.get("question")
